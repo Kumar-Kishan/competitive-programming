@@ -1,10 +1,12 @@
-#include"log/log.hpp"
+#include "log/log.hpp"
+using namespace std;
 
-int main(){
+int main()
+{
     spdlog::set_level(spdlog::level::debug);
     // change log pattern
-    spdlog::set_pattern("[%H:%M:%S %z] [%n] [%^--%L--%$] [thread %t] %v");
-
-    Log::Info("Hello, World!!");
+    spdlog::set_pattern("[%H:%M:%S.%e] %v");
+    Log::Info("Started Work");
+    Log::Info("Done Now");
     return 0;
 }

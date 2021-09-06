@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
 
-set(name boilerplate)
+set(name cp)
 
 project(${name})
 
